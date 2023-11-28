@@ -1,0 +1,71 @@
+/* 设定导航栏样式 */
+nav {
+    display: flex;          /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中导航项 */
+    align-items: center;    /* 垂直居中导航项 */
+    height: 60px;           /* 根据实际情况设定导航栏高度 */
+    background-color: #333; /* 背景颜色 */
+}
+
+/* 设定导航项样式 */
+nav ul {
+    list-style-type: none;  /* 去掉列表项前的默认符号 */
+    padding: 0;             /* 去掉默认的内边距 */
+    margin: 0;              /* 去掉默认的外边距 */
+    display: flex;          /* 应用 Flexbox 布局 */
+}
+
+/* 设定导航链接样式 */
+nav ul li {
+    margin: 0 10px;         /* 设定左右间距 */
+}
+
+nav ul li a {
+    color: white;           /* 链接文字颜色 */
+    text-decoration: none;  /* 去掉下划线 */
+    padding: 5px 10px;      /* 文字周围的间距 */
+}
+
+
+body {
+    background-image: url('images/backdrop.png');
+    background-size: 100% 100%; /* 图片会被拉伸以适应网页的宽度和高度 */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* 设定视频容器样式 */
+#video-container {
+    display: flex;
+    justify-content: center; /* 水平居中视频 */
+    align-items: center; /* 垂直居中视频 */
+    margin-top: 30px; /* 设置顶部外边距为导航栏高度 */
+    width: 100%; /* 视频容器宽度与导航栏宽度一致 */
+    /* 没有设置固定高度，因为高度将由视频内容决定 */
+    overflow: hidden; /* 如果视频超出容器边界，则隐藏溢出的部分 */
+}
+
+/* 设定视频样式 */
+#video-container video {
+    width: 100%; /* 视频宽度填满整个容器 */
+    transform: scale(0.5); /* 将视频尺寸缩小到原始尺寸的一半 */
+    transform-origin: center center; /* 变换的基点为视频的中心 */
+}
+
+/* 链接所在段落的样式 */
+p {
+    text-align: center; /* 居中对齐 */
+    color: white; /* 设置段落文字颜色为白色 */
+}
+
+/* 链接本身的样式 */
+a {
+    color: white; /* 设置链接文字颜色为白色 */
+}
+
+
+
+
+
+
+
